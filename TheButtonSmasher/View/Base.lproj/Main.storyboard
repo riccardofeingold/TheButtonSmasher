@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TheButtonSmasher" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="p3Z-Bh-0kq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oz3-Zc-rBs">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="447"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smashes: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTC-U0-Fac">
+                                                <rect key="frame" x="49" y="179.5" width="316" height="88"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="88" id="cg4-bA-3Yj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="54"/>
+                                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="rTC-U0-Fac" firstAttribute="centerX" secondItem="oz3-Zc-rBs" secondAttribute="centerX" id="Aqx-UE-dKa"/>
+                                            <constraint firstItem="rTC-U0-Fac" firstAttribute="centerY" secondItem="oz3-Zc-rBs" secondAttribute="centerY" id="SC8-RE-BOB"/>
+                                            <constraint firstItem="rTC-U0-Fac" firstAttribute="leading" secondItem="oz3-Zc-rBs" secondAttribute="leading" constant="49" id="yqq-cx-73c"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dhd-iz-rp9">
+                                        <rect key="frame" x="0.0" y="447" width="414" height="449"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgv-P7-t05">
+                                                <rect key="frame" x="110" y="129.5" width="194" height="190"/>
+                                                <state key="normal" image="SmashButton.png"/>
+                                                <connections>
+                                                    <action selector="buttonSmashed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8hl-sJ-feU"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="kgv-P7-t05" firstAttribute="centerY" secondItem="Dhd-iz-rp9" secondAttribute="centerY" id="1oa-cQ-3UT"/>
+                                            <constraint firstItem="kgv-P7-t05" firstAttribute="centerX" secondItem="Dhd-iz-rp9" secondAttribute="centerX" id="hMu-f0-Lel"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Dhd-iz-rp9" firstAttribute="top" secondItem="p3Z-Bh-0kq" secondAttribute="top" constant="447" id="7Jp-yR-wRf"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="p3Z-Bh-0kq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1ty-wE-gav"/>
+                            <constraint firstItem="p3Z-Bh-0kq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-44" id="S2M-qG-onM"/>
+                            <constraint firstItem="p3Z-Bh-0kq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xqa-yP-hCh"/>
+                            <constraint firstItem="p3Z-Bh-0kq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bHJ-AQ-lvz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="smashLabel" destination="rTC-U0-Fac" id="85K-Fb-avZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SmashButton.png" width="194" height="190"/>
+    </resources>
+</document>

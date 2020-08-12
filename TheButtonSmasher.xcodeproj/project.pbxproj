@@ -13,6 +13,8 @@
 		DB376F2A24E43E5700201C3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB376F2824E43E5700201C3E /* Main.storyboard */; };
 		DB376F2C24E43E6000201C3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB376F2B24E43E6000201C3E /* Assets.xcassets */; };
 		DB376F2F24E43E6000201C3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB376F2D24E43E6000201C3E /* LaunchScreen.storyboard */; };
+		DB376F4124E4446000201C3E /* SmashButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DB376F4024E4446000201C3E /* SmashButton.png */; };
+		DB376F4324E4448500201C3E /* SmashButton.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DB376F4224E4448500201C3E /* SmashButton.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DB376F2B24E43E6000201C3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB376F2E24E43E6000201C3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB376F3024E43E6000201C3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB376F4024E4446000201C3E /* SmashButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SmashButton.png; sourceTree = "<group>"; };
+		DB376F4224E4448500201C3E /* SmashButton.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = SmashButton.pdf; path = ../../../../../Desktop/SmashButton.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,47 @@
 			children = (
 				DB376F2224E43E5700201C3E /* AppDelegate.swift */,
 				DB376F2424E43E5700201C3E /* SceneDelegate.swift */,
-				DB376F2624E43E5700201C3E /* ViewController.swift */,
-				DB376F2824E43E5700201C3E /* Main.storyboard */,
-				DB376F2B24E43E6000201C3E /* Assets.xcassets */,
-				DB376F2D24E43E6000201C3E /* LaunchScreen.storyboard */,
+				DB376F3924E43F5100201C3E /* Model */,
+				DB376F3724E43F3B00201C3E /* View */,
+				DB376F3624E43F2000201C3E /* Controller */,
+				DB376F3824E43F4300201C3E /* Supporting Files */,
 				DB376F3024E43E6000201C3E /* Info.plist */,
 			);
 			path = TheButtonSmasher;
+			sourceTree = "<group>";
+		};
+		DB376F3624E43F2000201C3E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DB376F2624E43E5700201C3E /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DB376F3724E43F3B00201C3E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB376F2824E43E5700201C3E /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB376F3824E43F4300201C3E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB376F2B24E43E6000201C3E /* Assets.xcassets */,
+				DB376F2D24E43E6000201C3E /* LaunchScreen.storyboard */,
+				DB376F4024E4446000201C3E /* SmashButton.png */,
+				DB376F4224E4448500201C3E /* SmashButton.pdf */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB376F3924E43F5100201C3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +164,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB376F2F24E43E6000201C3E /* LaunchScreen.storyboard in Resources */,
+				DB376F4324E4448500201C3E /* SmashButton.pdf in Resources */,
 				DB376F2C24E43E6000201C3E /* Assets.xcassets in Resources */,
+				DB376F4124E4446000201C3E /* SmashButton.png in Resources */,
 				DB376F2A24E43E5700201C3E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
