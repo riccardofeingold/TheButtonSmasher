@@ -14,7 +14,6 @@
 		DB376F2C24E43E6000201C3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB376F2B24E43E6000201C3E /* Assets.xcassets */; };
 		DB376F2F24E43E6000201C3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB376F2D24E43E6000201C3E /* LaunchScreen.storyboard */; };
 		DB376F4124E4446000201C3E /* SmashButton.png in Resources */ = {isa = PBXBuildFile; fileRef = DB376F4024E4446000201C3E /* SmashButton.png */; };
-		DB376F4324E4448500201C3E /* SmashButton.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DB376F4224E4448500201C3E /* SmashButton.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		DB376F2E24E43E6000201C3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB376F3024E43E6000201C3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB376F4024E4446000201C3E /* SmashButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SmashButton.png; sourceTree = "<group>"; };
-		DB376F4224E4448500201C3E /* SmashButton.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = SmashButton.pdf; path = ../../../../../Desktop/SmashButton.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +91,6 @@
 				DB376F2B24E43E6000201C3E /* Assets.xcassets */,
 				DB376F2D24E43E6000201C3E /* LaunchScreen.storyboard */,
 				DB376F4024E4446000201C3E /* SmashButton.png */,
-				DB376F4224E4448500201C3E /* SmashButton.pdf */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -164,7 +161,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB376F2F24E43E6000201C3E /* LaunchScreen.storyboard in Resources */,
-				DB376F4324E4448500201C3E /* SmashButton.pdf in Resources */,
 				DB376F2C24E43E6000201C3E /* Assets.xcassets in Resources */,
 				DB376F4124E4446000201C3E /* SmashButton.png in Resources */,
 				DB376F2A24E43E5700201C3E /* Main.storyboard in Resources */,
